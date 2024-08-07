@@ -1,0 +1,84 @@
+import random
+p1=0
+L=1
+c1=0
+a=input('odd or even')
+b=int(input('enter number'))
+r=random.randint(1,10)
+print(r)
+c=b+r2
+if a=='even':
+    if c%2==0:
+        d=input('batting or bowling')
+    elif c%2==1:
+        print ('computer won\n Computer choese batting')
+        d='bowling'
+elif a=='odd':
+    if c%2==1:
+        d=input('batting or bowling')
+    elif c%2==0:
+        print ('computer won Computer\n choese batting')
+        d='bowling'
+
+if d=='batting':
+    while True:
+        f=int(input('enter number'))
+        r2=random.randint(1,10)
+        print(r2)
+        if f!=r2:
+            print (f)
+            p1+=f
+        elif f==r2:
+            print ("out")
+            print ("*"*60)
+            z='o'
+            x='out'
+            break
+        print ('your score is ',p1)
+elif d=="bowling":
+    while True:
+         f=int(input('enter number'))
+         r2=random.randint(1,10)
+         print(r2)
+         if f!=r2:
+             print (f)
+             c1+=r2
+         elif f==r2:
+             print ("out")
+             z='out'
+             x='o'
+             print ("*"*60)
+             break
+         print ('Computer score is ',c1)
+
+while x=='out':
+    f=int(input('enter number'))
+    r2=random.randint(1,10)
+    print(r2)
+    if f!=r2:
+        print (f)
+        c1+=r2
+    elif f==r2:
+        print ("out")
+        print ("*"*60)
+        break
+    x=='o'
+    print ('Computer score is ',c1)
+    
+while z=='out':
+    f=int(input('enter number'))
+    r2=random.randint(1,10)
+    print(r2)
+    if f!=r2:
+        print (f)
+        p1+=f
+    elif f==r2:
+        print ("out")
+        print ("*"*60)
+        break
+    print ('your score is ',p1)
+     
+if p1<c1:
+    print ('Computer won')
+elif p1>c1:
+    print ('you won')
