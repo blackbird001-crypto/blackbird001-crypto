@@ -6,7 +6,7 @@ a=input('odd or even')
 b=int(input('enter number'))
 r=random.randint(1,10)
 print(r)
-c=b+r2
+c=b+r
 if a=='even':
     if c%2==0:
         d=input('batting or bowling')
