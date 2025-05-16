@@ -1,0 +1,28 @@
+a=['.  _','_ . . .','_ . _ .','_ . .','.','. . _ .','_ _ .','. . . .','. .','. _ _ _','_ . _','. _ . .','_ _','_ .','_ _ _','. _ _.','_ _ . _','. _ .','. . .','_','. . _','. . . _','. _ _','_ . . _','_ . _ _','_ _ . .']
+b='a b c d e f g h i j k l m n o p q r s t u v w x y z'
+c=b.split()
+r=int(input('press 1 for word to mass code \n press 2 for mass code to word \n press 3 to exit \n'))
+while r!=3:
+   # r=int(input('press 1 for word to mass code \n press 2 for mass code to word \n press 3 to exit \n'))
+    if r==1:
+        x=''
+        A=input('word')
+        for i in A:
+            if i in c:
+                x=x+a[c.index(i)]+'   '
+            else:
+                x=x+'       '
+        print(x)
+
+    elif r==2:
+        x=input('enter mass code:')
+        q=''
+        z=x.split('       ')
+        for k in z:
+            for u in k.split('   '):
+                if u in a:
+                    print(c[a.index(u)],end='')
+                else:
+                    print(" ",end='')
+        print()
+    r=int(input('press 1 for word to mass code \n press 2 for mass code to word \n press 3 to exit \n'))
